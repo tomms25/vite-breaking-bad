@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
 export const store = reactive ({
-    searchText: "",
-    loading: true,
+    characterList: [],
+    apiURL: "https://rickandmortyapi.com/api/character",
 });
