@@ -1,0 +1,28 @@
+// Importazioni
+
+// Importo variables
+@use './partials/variables.scss' as *;
+
+// Bootstrap 
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// Font esterno installato da fontsource
+@import 'node_modules/@fontsource/montserrat/index.css';
+@import 'node_modules/@fontsource/montserrat/700.css';
+
+
+body {
+    font-family: $main-font;
+    color: $text-color;
+    background-color: linear-gradient(to left,
+            transparent 0px,
+            transparent 20px,
+            rgba(#000, 0.02) 20px,
+            rgba(#000, 0.02) 40px),
+        linear-gradient(to bottom,
+            transparent 0px,
+            transparent 20px,
+            rgba(#000, 0.02) 20px,
+            rgba(#000, 0.02) 40px);
+    background-size: 40px, 100% 40px;
+}
